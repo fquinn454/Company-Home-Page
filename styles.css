@@ -72,34 +72,46 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   }
 
-/*Import fonts*/
-/* latin */
-@font-face {
-    font-family: 'Patua One';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/patuaone/v16/ZXuke1cDvLCKLDcimxB44_lu.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
 
-/*Universal Styles*/
-
-
-
+/* Universal */
 body {
-    font-family: 'Patua One', cursive;
+    font-family: 'Noto Sans', sans-serif;
     background-color: 
     hsla(192, 15%, 94%, 1);
 }
 
-h1{
+h1, h2 {
     color: hsla(356, 100%, 41%, 1);
+}
+
+h1{
     font-weight: bold;
     text-align: center;
     margin-top: 5%;
 }
 
+h2{
+    margin: 2% 3%;
+}
+
+
+.white-section {
+    background-color: white;
+    border-radius: 25px;
+    border: 1px solid hsla(356, 100%, 41%, 1);
+}
+
+.mission, .products, .meet-the-team {
+    margin: 2% 5%;
+}
+
+.flex-images {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    flex-wrap: wrap;
+    align-content: center;
+}
 /*Banner*/
 .banner{
     background-image: url(./images/christmas-banner.jpg);
@@ -126,12 +138,9 @@ header {
 }
 
 nav {
-    border: 1px solid hsla(356, 100%, 41%, 1);
     border-collapse: collapse;
     font-size:24px;
     width:100%;
-    background-color: white;
-    border-radius: 25px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -146,18 +155,15 @@ nav a {
     font-weight: bold;
 }
 
-/*Mission*/
-.mission{
-    background-color: white;
+img {
+    width: 250px;
+    height: 170px;
     border-radius: 25px;
-    border: 1px solid hsla(356, 100%, 41%, 1);
-    text-align: justify;
-    margin: 2% 5%;
 }
 
-h2{
-    color: hsla(356, 100%, 41%, 1);
-    margin: 2% 3%;
+/*Mission*/
+.mission{
+    text-align: justify;
 }
 
 article{
@@ -168,21 +174,6 @@ article{
 }
 
 /*Products*/
-.products {
-    background-color: white;
-    border-radius: 25px;
-    border: 1px solid hsla(356, 100%, 41%, 1);
-    margin: 2% 5%;
-}
-
-.products .flex-images{
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    flex-wrap: wrap;
-    align-content: center;
-}
-
 figure {
     margin-top: 0;
     margin-bottom: 4%;
@@ -196,31 +187,7 @@ figcaption{
     padding-left: 5%;
 }
 
-.products img {
-    width: 250px;
-    height: 170px;
-    border-radius: 25px;
-}
-
 /*Our Team*/
-.meet-the-team {
-    background-color: white;
-    border-radius: 25px;
-    border: 1px solid hsla(356, 100%, 41%, 1);
-    margin: 2% 5%;
-}
-
-.meet-the-team .flex-images{
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    flex-wrap: wrap;
-    align-content: center;
-}
-
 .meet-the-team img {
-    width: 250px;
-    height: 170px;
     margin: 0 auto;
-    border-radius: 25px;
 }
